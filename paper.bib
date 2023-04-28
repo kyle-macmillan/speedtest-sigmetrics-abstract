@@ -1,10 +1,439 @@
-@article{reich2013modular,
-  title={{Modular SDN Programming with Pyretic}},
-author={Reich, Joshua and Monsanto, Christopher and Foster, Nate and Rexford,
-Jennifer and Walker, David},
-  journal={USENIX; login},
-  volume={38},
+# speed test use cases
+
+@misc{ph-peerting-study, 
+	title={{IP Peering and improving Phillippines Internet}}, 
+	url={https://ph.news.yahoo.com/globe-ip-peering-boost-state-ph-internet-165228610.html},
+	journal={}, 
+	author={Measurement Lab}
+}
+
+
+@misc{battle-for-the-net, 
+	title={{Internet Health Test based on Measurement Lab NDT}}, 
+	url={https://www.battleforthenet.com/internethealthtest/},
+	journal={Advocacy group}, 
+	author={Battle For the Net},
+	year=2022
+}
+
+@misc{penn-rural-mlab, 
+	title={{Broadband Availability and Access in Rural Pennsylvania}}, 
+	url={https://www.rural.pa.gov/publications/broadband.cfm},
+	journal={Research Group}, 
+	author={Pennsylvania State University and Measurement Lab},
+	year=2019
+}
+
+
+@misc{idaho-speed-push, 
+	title={{Push on internet speed tests to increase chance at 1B USD in funding}}, 
+	url={https://archive.ph/RWdY8},
+	author={Idaho County Free Press},
+	year=2022
+}
+
+
+
+
+@misc{ntia2018broadband,
+	title = "National Broadband Availability Map",
+	url = "https://www.ntia.doc.gov/category/national-broadband-availability-map",
+	journal = "United States Department of Commerce",
+	year = "2018"
+}
+
+
+
+
+@misc{infrastructure2022biden,
+	title={{Biden Administration to Release \$45B for Nationwide Internet}},
+	url={https://apnews.com/article/technology-broadband-internet-643949e239296f4f5154509d4c40de73},
+	journal={AP News},
+	author={Josh Boak},
+	month={May},
+	year={2022}
+}
+
+@misc{fcc2022frontier,
+	title={{FTC Takes Action Against Frontier for Lying about Internet Speeds and
+	Ripping Off Customers Who Paid High-Speed Prices for Slow Service}},
+	url={https://www.ftc.gov/news-events/news/press-releases/2022/05/ftc-takes-action-against-frontier-lying-about-internet-speeds-ripping-customers-who-paid-high-speed},
+	author={Federal Communications Commission},
+	month={May},
+	year={2022}
+}
+
+@misc{ookla-better-suited, 
+	title={{Using M-Lab Data in Broadband Advocacy and Policy}}, 
+	url={https://www.measurementlab.net/blog/mlab-data-policy-advocacy/},
+	journal={Research Group},
+	author={Measurement Lab},
+	year=2021
+}
+
+
+@misc{ookla-ny-case-study,
+	title={{Case study: Ookla and NDT data comparison for upstate New York}}, 
+	url={https://www.ookla.com/articles/better-funding-decisions-accurate-broadband-network-data},
+	journal={White Paper},
+	author={Ookla},
+	year=2020
+}
+
+
+
+
+@misc{fcc-mba, 
+	title={{Measuring Broadband America Program}}, 
+	url={https://www.fcc.gov/general/measuring-broadband-america},
+	journal={}, 
+	author={Federal Communications Commission},
+	year=2021
+}
+
+
+
+
+@misc{ookla-docs, 
+	title={{Ookla Speed Test Methodology}}, 
+	url={https://help.speedtest.net/hc/en-us/articles/360038679354},
+	journal={}, 
+	author={Ookla},
+	year=2019
+}
+
+
+@misc{ookla-old-docs, 
+	title={{(Outdated) Ookla Speed Test Methodology -  Legacy HTTP client}}, 
+	url={https://sandboxsupport.speedtest.net/hc/en-us/articles/202972350},
+	journal={}, 
+	author={Ookla},
+	year=2014
+}
+
+@misc{mlab-issue-email-1, 
+	title={{Measurement Labs (NDT) Speedtest is incorrect?}}, 
+	url={https://groups.google.com/a/measurementlab.net/g/discuss/c/vOTs3rcbp38},
+	journal={}, 
+	author={Measurement Lab Mailing List},
+	year=2017
+}
+
+
+@misc{mlab-issue-email-2, 
+	title={{Download speed discrepancy when running (NDT) speed test}}, 
+	url={https://groups.google.com/a/measurementlab.net/g/discuss/c/7gbIb8a44bg/m/LS6dXalbCQAJ},
+	journal={}, 
+	author={Measurement Lab Mailing List},
+	year=2022
+}
+
+
+@misc{mlab-issue-email-3, 
+	title={{Discussion of Cogent's prioritization of Measurement Lab's traffic}}, 
+	url={https://groups.google.com/a/measurementlab.net/g/discuss/c/hqvIPYkIus0/m/iJp48rPXwAoJ},
+	journal={}, 
+	author={Measurement Lab Mailing List},
+	year=2014
+}
+
+
+@misc{ny-iht, 
+	title={{New York Internet Health Test}}, 
+	url={https://ag.ny.gov/SpeedTest},
+	journal={}, 
+	author={New York State Office of the Attorney General},
+	year = 2020
+}
+
+
+@inproceedings{khatouni2017speedtest,
+  title={Speedtest-like measurements in 3g/4g networks: The monroe experience},
+  author={Khatouni, Ali Safari and Mellia, Marco and Marsan, Marco Ajmone and Alfredsson, Stefan and Karlsson, Jonas and Brunstrom, Anna and Alay, Ozgu and Lutu, Andra and Midoglu, Cise and Mancuso, Vincenzo},
+  booktitle={2017 29th International Teletraffic Congress (ITC 29)},
+  volume={1},
+  pages={169--177},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{paul2021characterizing,
+  title={Characterizing Performance Inequity Across US Ookla Speedtest Users},
+  author={Paul, Udit and Liu, Jiamo and Adarsh, Vivek and Gu, Mengyang and Gupta, Arpit and Belding, Elizabeth},
+  journal={arXiv preprint arXiv:2110.12038},
+  year={2021}
+}
+
+# Probing-based techniques
+@inproceedings{dovrolis2001packet,
+  title={What do packet dispersion techniques measure?},
+  author={Dovrolis, Constantinos and Ramanathan, Parameswaran and Moore, David},
+  booktitle={Proceedings IEEE INFOCOM},
+  year={2001},
+}
+
+@inproceedings{jain2002pathload,
+	title={Pathload: A measurement tool for end-to-end available bandwidth},
+	author={Jain, Manish and Dovrolis, Constantinos},
+	booktitle={Passive and Active Measurements (PAM) Workshop},
+	year={2002},
+}
+
+@inproceedings{ribeiro2003pathchirp,
+	title={pathchirp: Efficient available bandwidth estimation for network paths},
+	author={Ribeiro, Vinay Joseph and Riedi, Rudolf H and Baraniuk, Richard G and Navratil, Jiri 
+	and Cottrell, Les},
+	booktitle={Passive and active measurement workshop},
+	year={2003}
+}
+
+@article{hu2003evaluation,
+  title={Evaluation and characterization of available bandwidth probing techniques},
+  author={Hu, Ningning and Steenkiste, Peter},
+  journal={IEEE Journal on Selected Areas in Communications},
+  year={2003},
+}
+
+@inproceedings{keshav1991control,
+  title={A control-theoretic approach to flow control},
+  author={Keshav, Srinivasan},
+  booktitle={Communications architecture \& protocols},
+  year={1991}
+}
+
+@inproceedings{ahmed2020flowtrace,
+  title={Flowtrace: A framework for active bandwidth measurements using in-band packet trains},
+  author={Ahmed, Adnan and Mok, Ricky and Shafiq, Zubair},
+  booktitle={Passive and Active Network Measurement},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{yang2021fast,
+  title={Fast and Light Bandwidth Testing for Internet Users.},
+  author={Yang, Xinlei and Wang, Xianlong and Li, Zhenhua and Liu, Yunhao and Qian, Feng and Gong, Liangyi and Miao, Rui and Xu, Tianyin},
+  booktitle={NSDI},
+  year={2021}
+}
+
+# Flooding-based speed tests
+@misc{mlab2022speedtest, 
+	title={Speed test by Measurement Lab}, 
+	url={https://speed.measurementlab.net/}, 
+	journal={Speed Test by Measurement Lab}, 
+	author={Measurement Lab},
+	year=2022
+}
+
+@misc{ookla-server-selection, 
+	title={How does Ookla select a server?}, 
+	url={https://help.speedtest.net/hc/en-us/articles/360038679834}, 
+	journal={Ookla Server}, 
+	author={Ookla},
+	year=2019
+}
+
+@misc{ndt-server-selection, 
+	title={{M-Lab Name Server: Server Selection Policy}}, 
+	url={https://github.com/m-lab/mlab-ns}, 
+	journal={M-Lab Server}, 
+	author={Measurement Lab},
+	year=2022
+}
+
+@article{ha2008cubic,
+  title={CUBIC: a new TCP-friendly high-speed TCP variant},
+  author={Ha, Sangtae and Rhee, Injong and Xu, Lisong},
+  journal={ACM SIGOPS operating systems review},
+  volume={42},
   number={5},
-  pages={128--134},
-  year={2013}
+  pages={64--74},
+  year={2008},
+  publisher={ACM New York, NY, USA}
+}
+
+@INPROCEEDINGS{8117540,
+  author={Hock, Mario and Bless, Roland and Zitterbart, Martina},
+  booktitle={2017 IEEE 25th International Conference on Network Protocols (ICNP)}, 
+  title={Experimental evaluation of BBR congestion control}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/ICNP.2017.8117540}}
+
+
+@misc{mlabs2020bigquery, 
+	title={BigQuery QuickStart}, 
+	url={https://www.measurementlab.net/data/docs/bq/quickstart/}, 
+	journal={Measurement Labs}, 
+	author={Measurement Lab},
+	year=2020
+} 
+
+@misc{mlab2020evolution,
+	title={Evolution of NDT},
+	url={https://www.measurementlab.net/blog/evolution-of-ndt/},
+	journal={Measurement Lab},
+	author={Measurement Lab},
+	year=2020
+}
+
+@misc{mlab2022ndt, 
+	title={NDT (Network Diagnostic Tool)}, 
+	url={https://www.measurementlab.net/tests/ndt/}, 
+	author={Measurement Lab},
+	year=2022
+} 
+
+@misc{ookla2019throughput,
+	title={How does Speedtest measure my network speeds?},
+	url={https://help.speedtest.net/hc/en-us/articles/360038679354-How-does-Speedtest-measure-my-network-speeds-},
+	journal={Ookla Speedtest},
+	author={Carin Overturf},
+	year=2019
+}
+
+
+@misc{netrics-data,
+	title={{Speed test data collected from Netrics}},
+	url={https://github.com/chicago-cdac/netrics-data},
+	author={Internet Equity Initiative UChicago},
+	year={2022}
+}
+
+@article{netrics-code,
+	title={Benchmarks or Equity? A New Approach to Measuring Internet Performance},
+	author={Sharma, Ranya and Mangla, Tarun and Saxon, James and Richardson, Marc 
+	and Feamster, Nick and Marwell, Nicole P},
+	journal={A New Approach to Measuring Internet Performance (August 3, 2022)},
+	year={2022}
+}
+
+@misc{ookla2020ntests,
+	title={About Ookla SpeedTests},
+	url={https://www.speedtest.net/about},
+	author={Ookla},
+	year=2020
+}
+
+@misc{ookla2022speedtest, 
+	title={Speedtest by Ookla - The Global Broadband Speed Test}, 
+	url={https://www.speedtest.net/}, 
+	journal={Speedtest.net}, 
+	author={Ookla},
+	year=2022
+}
+
+@misc{netflix2022fast, 
+	title={fast.com}, 
+	url={https://fast.com/}, 
+	journal={Internet Speed Test}, 
+	author={Netflix},
+	year=2022
+}
+
+@misc{comcast2022speedtest, 
+	url={https://speedtest.xfinity.com/}, 
+	title={Xfinity Speed Test},
+	journal={Xfinity Speed Test}, 
+	author={Comcast},
+	year=2022
+}
+
+@misc{att2022speedtest, 
+	title={AT\&T Internet Speed Test}, 
+	url={https://www.att.com/support/speedtest/}, 
+	journal={AT\&T Internet Speed Test}, 
+	author={AT\&T},
+	year=2022
+} 
+
+# Evaluating speed tests + Residential networks
+
+@inproceedings{paul2022context,
+author = {Paul, Udit and Liu, Jiamo and Gu, Mengyang and Gupta, Arpit and Belding, Elizabeth},
+title = {The Importance of Contextualization of Crowdsourced Active Speed Test Measurements},
+year = {2022},
+isbn = {9781450392594},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3517745.3561441},
+doi = {10.1145/3517745.3561441},
+booktitle = {Proceedings of the 22nd ACM Internet Measurement Conference},
+pages = {274–289},
+numpages = {16},
+location = {Nice, France},
+series = {IMC '22}
+}
+
+@techreport{clark_measurement_2021,
+	address = {Rochester, NY},
+	type = {{SSRN} {Scholarly} {Paper}},
+	title = {Measurement, {Meaning} and {Purpose}: {Exploring} the {M}-{Lab} {NDT} {Dataset}},
+	author = {Clark, David D. and Wedeman, Sara},
+	month = aug,
+	year = {2021},
+}
+@article{feamster2020measuring,
+  title={Measuring internet speed: current challenges and future recommendations},
+  author={Feamster, Nick and Livingood, Jason},
+  journal={Communications of the ACM},
+  year={2020},
+  publisher={ACM}
+}
+
+@inproceedings{goga2012speed,
+  title={Speed measurements of residential internet access},
+  author={Goga, Oana and Teixeira, Renata},
+  booktitle={Passive and Active Network Measurement},
+  year={2012},
+  organization={Springer}
+}
+
+@article{sundaresan2011broadband,
+  title={Broadband internet performance: a view from the gateway},
+  author={Sundaresan, Srikanth and De Donato, Walter and Feamster, Nick and Teixeira, Renata and Crawford, Sam and Pescap{\`e}, Antonio},
+  journal={ACM SIGCOMM computer communication review},
+  year={2011},
+  publisher={ACM }
+}
+
+@inproceedings{canadi2012revisiting,
+  title={Revisiting broadband performance},
+  author={Canadi, Igor and Barford, Paul and Sommers, Joel},
+  booktitle={Proceedings of the 2012 Internet Measurement Conference},
+  publisher={ACM},
+  year={2012}
+}
+
+@misc{fcc2022mba, 
+	title={Measuring Broadband America}, 
+	url={https://www.fcc.gov/general/measuring-broadband-america}, 
+	journal={Federal Communications Commission}, 
+	year={2022}, 
+	month={Apr}
+} 
+
+@misc{samknows2022, 
+	url={https://www.samknows.com/}, 
+	author={SamKnows},
+	journal={SamKnows},
+	year={2022}
+} 
+
+@inproceedings{bauer2010understanding,
+  title={Understanding broadband speed measurements},
+  author={Bauer, Steven and Clark, David D and Lehr, William},
+  year={2010},
+  organization={TPRC}
+}
+
+# Statistics
+@inbook{peck_olsen_devore_2009, 
+	place={Belmont, CA}, 
+	title={Chapter 11: Comparing Two Populations or Treatments}, 
+	booktitle={Introduction to Statistics and Data Analysis}, 
+	author={Peck, Roxy and Olsen, Chris and Devore, Jay L.}, 
+	year={2009}
 }
