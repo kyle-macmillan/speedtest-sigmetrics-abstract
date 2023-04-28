@@ -1,0 +1,32 @@
+\section{Main Findings} \label{sec:findings}
+
+Our main findings are summarized below:
+\begin{itemize}
+    \item   The \ndt client can send at about 95\% of a high-capacity link (up to
+			2~Gbps) using only a single TCP connection. This finding updates past work
+			that reported a different finding, that a single TCP connection can not achieve a
+			throughput approaching full capacity~\cite{feamster2020measuring}. 
+			(\cref{subsec:network-conditions}).\\\\
+			
+	\item	The \ndt client under-reports throughput at higher latencies, in comparison
+			to \ookla: The \ookla client reports speeds up to 12\% higher than \ndt at
+			200~ms round-trip latency, and up to 56\% higher at 500~ms latency
+			(\cref{subsec:network-conditions}).\\\\
+			
+    \item	Across all households in the wide-area deployment, the median fraction of paired tests 
+			for which \ookla
+			reports a speed that is 0--5\% higher than \ndt is 73.8\%. The fraction of
+			paired tests for which \ookla reports a speed that is 5--25\% higher is
+			13.4\% (\cref{subsec:paired-results}).\\\\
+			
+	\item 	For \ookla, the choice of test server can significantly affect the reported
+			speed. Tests using certain \ookla servers systematically report speeds 10\%
+			lower than other servers. (\cref{subsec:server-selection}). \\\\
+			
+	\item	\ndt tests are more likely to under-report during peak hours. 43.4\% of
+			households observed a statistically significant decrease in \ndt-reported
+			download speed tests during peak hours, whereas only 18.9\% of these
+			households saw the same for \ookla (\cref{subsec:time-of-day}).\\ \hline
+\end{itemize}
+
+
