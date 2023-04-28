@@ -1,5 +1,24 @@
 \documentclass[sigconf]{acmart}
 
+
+\usepackage{pdflscape}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{balance}
+\usepackage{xspace}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{placeins}
+\usepackage{cleveref}
+\hypersetup{citecolor = blue}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage[utf8]{inputenc}
+\graphicspath{{figures/}}
+\usepackage[font=small,format=plain,labelfont=bf,textfont=it]{caption}
+\usepackage{booktabs}\usepackage[all=normal,wordspacing]{savetrees}
+\usepackage{enumitem}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -11,25 +30,22 @@
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-\setcopyright{acmcopyright}
 \copyrightyear{2023}
 \acmYear{2023}
+\setcopyright{rightsretained}
+\acmConference[SIGMETRICS '23 Abstracts] {Abstract Proceedings of the 2023 ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems}{June 19--23, 2023}{Orlando, FL, USA.}
+\acmBooktitle{Abstract Proceedings of the 2023 ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS '23 Abstracts), June 19--23, 2023, Orlando, FL, USA}
+\acmPrice{}
+\acmISBN{979-8-4007-0074-3/23/06}
 \acmDOI{10.1145/3579448}
 
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Conference acronym 'XX]{Make sure to enter the correct
-  conference title from your rights confirmation emai}{June 03--05,
-  2018}{Woodstock, NY}
-%%
-%%  Uncomment \acmBooktitle if the title of the proceedings is different
-%%  from ``Proceedings of ...''!
-%%
-%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-%%  June 03--05, 2018, Woodstock, NY}
-\acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
+
+\newcommand{\ookla}{Ookla\xspace}
+\newcommand{\ndt}{NDT7\xspace}
+
 
 \begin{document}
+\input{sections/abstract}
 
 %%
 %% The "title" command has an optional parameter,
@@ -124,12 +140,13 @@ Speed, Measurement Lab}
 \maketitle
 
 \input{sections/introduction.tex}
-
+\input{sections/contributions.tex}
+\input{sections/conclusion.tex}
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+\bibliography{paper}
 
 
 %%
