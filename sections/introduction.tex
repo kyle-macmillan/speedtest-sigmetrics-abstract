@@ -4,7 +4,7 @@ Network throughput---colloquially referred to as ``speed''---is among the most
 well-established and widely used network performance metrics.  Indeed, ``speed''
 is used as the basis for a wide range of purposes, from network troubleshooting
 and diagnosis, to policy
-advocacy~\cite{ny-iht,battle-for-the-net,penn-rural-mlab,fcc-mba} (e.g., on
+advocacy~\cite{battle-for-the-net} (e.g., on
 issues related to digital equity), to regulation and
 litigation~\cite{fcc2022frontier} (e.g., on issues related to ISP advertised
 speed).  Given the extent to which stakeholders, from consumers to regulators to
@@ -15,12 +15,12 @@ both design and implementation, are used interchangeably.
 Over the past decade, Ookla's Speedtest~\cite{ookla2022speedtest} (``\ookla'')
 and Measurement Lab's Network Diagnostic Tool (``NDT'')~\cite{mlab2022speedtest}
 have been widely used by both consumers and policymakers: \ookla and NDT report
-a daily average of over $10$ million~\cite{ookla2020ntests} and  $6$ million
-tests~\cite{mlabs2020bigquery}, respectively. As a result, the compiled datasets
+a daily average of over $10$ million and  $6$ million
+tests, respectively. As a result, the compiled datasets
 from these two tests, amounting to billions of speed
-tests~\cite{ookla2020ntests,clark_measurement_2021}, have become universal
+tests, have become universal
 resources for analyzing broadband Internet performance~\cite{battle-for-the-net,
-fcc2022frontier, ny-iht, penn-rural-mlab}. Unfortunately, these datasets have
+fcc2022frontier}. Unfortunately, these datasets have
 also been used out of context, without a clear understanding of the caveats and
 limitations of these tools under different circumstances and
 environments~\cite{ookla-ny-case-study}. 
@@ -28,13 +28,13 @@ environments~\cite{ookla-ny-case-study}.
 The stakes---and, therefore, the costs---of misuse have also never been higher. In the United
 States, Congress has committed \$43.5 billion to Internet infrastructure,
 including to last-mile performance and availability
-improvements~\cite{infrastructure2022biden}. 
+improvements. 
 % Allocating these funds depends, in
 % part, on \ookla and NDT speed test data~\cite{ntia2018broadband}. 
 In response,
 state and local officials across the country are currently urging consumers to
 participate in speed test crowd-sourcing initiatives to help establish which
-areas meet the federal funding criteria~\cite{idaho-speed-push}.
+areas meet the federal funding criteria.
 
 To their credit, the organizations who have developed these speed test tools
 have tried to prevent misappropriation of the data by issuing guidance about how
@@ -56,7 +56,7 @@ understanding of the circumstances under which each tool can accurately measure
 last-mile speed---and, hence, the context for interpreting each dataset.
 
 To this end, we conduct the first-of-its-kind systematic, comparative study of
-\ndt (the latest version of NDT) and \ookla \footnote{We focus on \ookla and \ndt because of   
+\ndt (the latest version of NDT) and \ookla~\cite{macmillan2023comparative} \footnote{We focus on \ookla and \ndt because of   
 their popularity with consumers and policy 
 makers, but
 the method in this paper also applies to other tools.}. We begin 
