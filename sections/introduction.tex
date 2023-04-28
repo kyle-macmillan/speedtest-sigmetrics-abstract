@@ -1,2 +1,80 @@
 \section{Introduction}\label{sec:intro}
 
+Network throughput---colloquially referred to as ``speed''---is among the most
+well-established and widely used network performance metrics.  Indeed, ``speed''
+is used as the basis for a wide range of purposes, from network troubleshooting
+and diagnosis, to policy
+advocacy~\cite{ny-iht,battle-for-the-net,penn-rural-mlab,fcc-mba} (e.g., on
+issues related to digital equity), to regulation and
+litigation~\cite{fcc2022frontier} (e.g., on issues related to ISP advertised
+speed).  Given the extent to which stakeholders, from consumers to regulators to
+ISPs, all rely on ``speed'', it is in some sense surprising that there is no
+consensus on the way to measure it. Absent any standard, many speed tests, varying in
+both design and implementation, are used interchangeably. 
+
+Over the past decade, Ookla's Speedtest~\cite{ookla2022speedtest} (``\ookla'')
+and Measurement Lab's Network Diagnostic Tool (``NDT'')~\cite{mlab2022speedtest}
+have been widely used by both consumers and policymakers: \ookla and NDT report
+a daily average of over $10$ million~\cite{ookla2020ntests} and  $6$ million
+tests~\cite{mlabs2020bigquery}, respectively. As a result, the compiled datasets
+from these two tests, amounting to billions of speed
+tests~\cite{ookla2020ntests,clark_measurement_2021}, have become universal
+resources for analyzing broadband Internet performance~\cite{battle-for-the-net,
+fcc2022frontier, ny-iht, penn-rural-mlab}. Unfortunately, these datasets have
+also been used out of context, without a clear understanding of the caveats and
+limitations of these tools under different circumstances and
+environments~\cite{ookla-ny-case-study}. 
+
+The stakes---and, therefore, the costs---of misuse have also never been higher. In the United
+States, Congress has committed \$43.5 billion to Internet infrastructure,
+including to last-mile performance and availability
+improvements~\cite{infrastructure2022biden}. 
+% Allocating these funds depends, in
+% part, on \ookla and NDT speed test data~\cite{ntia2018broadband}. 
+In response,
+state and local officials across the country are currently urging consumers to
+participate in speed test crowd-sourcing initiatives to help establish which
+areas meet the federal funding criteria~\cite{idaho-speed-push}.
+
+To their credit, the organizations who have developed these speed test tools
+have tried to prevent misappropriation of the data by issuing guidance about how
+the tools and public data should and should not be used. M-Lab has gone as far
+as to say that ``\textit{M-Lab's NDT and Ookla's SpeedTest measure fundamentally
+different things}''~\cite{mlab-issue-email-1}. While this statement is certainly
+true, there has been no study to date about how these differences in tool design
+can (and do) yield different results in practice, under different operating
+conditions. Acknowledging that \ookla and \ndt are different is, in some sense,
+besides the point. %, for two
+% reasons. 
+Although each tool may have been designed with a specific purpose in mind, that
+does not mean it can not fulfill---or be appropriated for---other purposes. Such
+has been the case with \ndt, which has been used as a tool to measure access ISP
+throughput, even though its stated design is to test the throughput of {\em a
+single TCP connection}. In light of the significant attention to both of these
+tests, it is imperative to develop a rigorous, quantitative, and specific
+understanding of the circumstances under which each tool can accurately measure
+last-mile speed---and, hence, the context for interpreting each dataset.
+
+To this end, we conduct the first-of-its-kind systematic, comparative study of
+\ndt (the latest version of NDT) and \ookla \footnote{We focus on \ookla and \ndt because of   
+their popularity with consumers and policy 
+makers, but
+the method in this paper also applies to other tools.}. We begin 
+with a set of in-lab
+experiments that allow us to directly compare the tools under controlled network
+conditions where ``ground truth'' is known. Next, we conduct more than 80,000
+paired wide-area network tests, whereby the two tests are run back-to-back, from
+126 home broadband access networks across more than 30 neighborhoods in
+one of the largest cities in the United States for nearly a year. In-lab, we use
+controlled experiments to characterize how \ndt and \ookla behave under a wide
+range of network conditions---specifically, varying throughput, latency, packet
+loss, and cross-traffic. We also study how different transport congestion
+control algorithms and client types (i.e., browser vs. native client) may affect
+the measurements that each tool reports.  Second, we compare the behavior of
+these two tools using data from our wide-area network deployment encompassing 10
+different ISPs. A unique and important methodological aspect of our study is the
+use of \textit{paired speed tests}, where we run \ookla and \ndt in succession.
+To our knowledge, this is the first comparative analysis of \ookla and \ndt in
+deployment over a significant number of networks for an extended period of time. 
+
+
